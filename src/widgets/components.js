@@ -111,6 +111,7 @@ const components = {
   pyload: dynamic(() => import("./pyload/component")),
   qbittorrent: dynamic(() => import("./qbittorrent/component")),
   qnap: dynamic(() => import("./qnap/component")),
+  qnapqss: dynamic(() => import("./qnapqss/component")),
   radarr: dynamic(() => import("./radarr/component")),
   readarr: dynamic(() => import("./readarr/component")),
   romm: dynamic(() => import("./romm/component")),

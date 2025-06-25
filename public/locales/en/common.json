@@ -222,6 +222,12 @@
         "volumeUsage": "Volume Usage",
         "invalid": "Invalid"
     },
+    "qnapqss": {
+        "wattage": "Watts",
+        "activepoeports": "Active PoE Ports",
+        "activeports": "Active Ports",
+        "tempC": "Temp"
+    },
     "deluge": {
         "download": "Download",
         "upload": "Upload",
