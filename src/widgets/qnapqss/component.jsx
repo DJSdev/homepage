@@ -30,9 +30,9 @@ export default function Component({ service }) {
     return <>
       <Container service={service}>
         <Block label="qnapqss.wattage" />
-        <Block label="qnapqss.activepoeports" />
+        <Block label="qnapqss.poeports" />
+        <Block label="qnapqss.ports" />
         <Block label="qnapqss.sensor" />
-        <Block label="qnapqss.activeports" />
       </Container>
     </>
   }
@@ -40,9 +40,9 @@ export default function Component({ service }) {
   return <>
     <Container service={service}>
       <Block label="qnapqss.wattage" value={ `${poeData.wattsUsed.toFixed(0)} / ${poeData.maxPower}` } />
-      <Block label="qnapqss.activepoeports" value={ `${poeData.numOfPoeDevices.toFixed(0)} / ${poeData.totalPoePorts}`} />
-      <Block label="qnapqss.tempC" value={t("common.number", { value: sensorData.switchTempC.toFixed(1), maximumFractionDigits: 1, style: "unit", unit: "celsius" })} />
-      <Block label="qnapqss.activeports" value={t("common.number", { value: portData.activePorts })} />
+      <Block label="qnapqss.poeports" value={ `${poeData.numOfPoeDevices.toFixed(0)} / ${poeData.totalPoePorts}` } />
+      <Block label="qnapqss.ports" value={ `${portData.activePorts} / ${poeData.totalPoePorts}` } />
+      <Block label="qnapqss.sensor" value={t("common.number", { value: sensorData.switchTempC.toFixed(1), maximumFractionDigits: 1, style: "unit", unit: "celsius" })} />
     </Container>
   </>
 }

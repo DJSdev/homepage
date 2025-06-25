@@ -224,9 +224,9 @@
     },
     "qnapqss": {
         "wattage": "Watts",
-        "activepoeports": "Active PoE Ports",
-        "activeports": "Active Ports",
-        "tempC": "Temp"
+        "poeports": "PoE Ports",
+        "ports": "Ports",
+        "sensor": "Temp"
     },
     "deluge": {
         "download": "Download",
